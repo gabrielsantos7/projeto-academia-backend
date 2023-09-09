@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import com.academia.academiaalunos.domain.Aluno;
 import com.academia.academiaalunos.domain.Avaliacao;
 import com.academia.academiaalunos.exception.BadRequestException;
-import com.academia.academiaalunos.mapper.AvaliacaoMapper;
 import com.academia.academiaalunos.repository.AlunoRepository;
 import com.academia.academiaalunos.repository.AvaliacaoRepository;
 import com.academia.academiaalunos.requests.AvaliacaoPostRequestBody;
@@ -45,16 +44,32 @@ public class AvaliacaoService {
         Aluno aluno = alunoRepository.findById(alunoId)
             .orElseThrow(() -> new BadRequestException("Aluno not found"));
         
-        Avaliacao avaliacao = AvaliacaoMapper.INSTANCE.toAvaliacao(avaliacaoPostRequestBody);
-        avaliacao.setAluno(aluno);
-
-        return avaliacaoRepository.save(avaliacao);
+            return avaliacaoRepository.save(
+                Avaliacao.builder()
+                .data(avaliacaoPostRequestBody.getData())
+                .peso(avaliacaoPostRequestBody.getPeso())
+                .altura(avaliacaoPostRequestBody.getAltura())
+                .medidas(avaliacaoPostRequestBody.getMedidas())
+                .porcentagemGordura(avaliacaoPostRequestBody.getPorcentagemGordura())
+                .observacoes(avaliacaoPostRequestBody.getObservacoes())
+                .aluno(aluno)
+                .build()
+            );
     }
 
     @Transactional
     public void replace(AvaliacaoPutRequestBody avaliacaoPutRequestBody) {
         Avaliacao savedAvaliacao = findByIdOrThrowBadRequestException(avaliacaoPutRequestBody.getId());
-        Avaliacao avaliacao = AvaliacaoMapper.INSTANCE.toAvaliacao(avaliacaoPutRequestBody);
+        Avaliacao avaliacao = Avaliacao.builder()
+            .id(savedAvaliacao.getId())
+            .data(avaliacaoPutRequestBody.getData())
+            .peso(avaliacaoPutRequestBody.getPeso())
+            .altura(avaliacaoPutRequestBody.getAltura())
+            .medidas(avaliacaoPutRequestBody.getMedidas())
+            .porcentagemGordura(avaliacaoPutRequestBody.getPorcentagemGordura())
+            .observacoes(avaliacaoPutRequestBody.getObservacoes())
+            .aluno(avaliacaoPutRequestBody.getAluno())
+            .build();
         avaliacao.setId(savedAvaliacao.getId());
         avaliacaoRepository.save(avaliacao);
     }    

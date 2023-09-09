@@ -6,7 +6,6 @@ import javax.transaction.Transactional;
 
 import com.academia.academiaalunos.domain.Aluno;
 import com.academia.academiaalunos.exception.BadRequestException;
-import com.academia.academiaalunos.mapper.AlunoMapper;
 import com.academia.academiaalunos.repository.AlunoRepository;
 import com.academia.academiaalunos.requests.AlunoPostRequestBody;
 import com.academia.academiaalunos.requests.AlunoPutRequestBody;
@@ -35,13 +34,33 @@ public class AlunoService {
     
     @Transactional
     public Aluno save(AlunoPostRequestBody alunoPostRequestBody) {
-        return alunoRepository.save(AlunoMapper.INSTANCE.toAluno(alunoPostRequestBody));
+        return alunoRepository.save(
+            Aluno.builder()
+                .nome(alunoPostRequestBody.getNome())
+                .altura(alunoPostRequestBody.getAltura())
+                .peso(alunoPostRequestBody.getPeso())
+                .telefone(alunoPostRequestBody.getTelefone())
+                .dataNascimento(alunoPostRequestBody.getDataNascimento())
+                .endereco(alunoPostRequestBody.getEndereco())
+                .avaliacoes(alunoPostRequestBody.getAvaliacoes())
+                .build()
+        );
     }
 
     @Transactional
     public void replace(AlunoPutRequestBody alunoPutRequestBody) {
         Aluno savedAluno = findByIdOrThrowBadRequestException(alunoPutRequestBody.getId());
-        Aluno aluno = AlunoMapper.INSTANCE.toAluno(alunoPutRequestBody);
+
+        Aluno aluno = Aluno.builder()
+            .id(savedAluno.getId())
+            .nome(alunoPutRequestBody.getNome())
+            .altura(alunoPutRequestBody.getAltura())
+            .peso(alunoPutRequestBody.getPeso())
+            .telefone(alunoPutRequestBody.getTelefone())
+            .dataNascimento(alunoPutRequestBody.getDataNascimento())
+            .endereco(alunoPutRequestBody.getEndereco())
+            .build();
+
         aluno.setId(savedAluno.getId());
         alunoRepository.save(aluno);
     }
