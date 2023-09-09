@@ -1,0 +1,17 @@
+{
+   "id": 1,
+   "nome": "José Rodrigo",
+   "altura": 1.78,
+   "peso": 75.0,
+   "telefone": "(11) 99999-9999",
+   "dataNascimento": "1990-01-30",
+   "endereco": {
+     "logradouro": "Rua Zeca Gado",
+     "numero": "456",
+     "bairro": "Bairro da Liberdade",
+     "cidade": "Salvador",
+     "estado": "BA",
+     "cep": "12345-678"
+   }
+ }
+ 

@@ -1,0 +1,112 @@
+[
+  {
+    "data": "2023-08-24",
+    "peso": 70.5,
+    "altura": 1.75,
+    "medidas": [80.0, 60.0, 90.0],
+    "porcentagemGordura": 15.0,
+    "observacoes": "Avaliação física completa",
+    "aluno": {
+      "id": 1
+    }
+  },
+  {
+    "data": "2023-08-25",
+    "peso": 68.0,
+    "altura": 1.7,
+    "medidas": [82.0, 62.0, 91.0],
+    "porcentagemGordura": 14.5,
+    "observacoes": "Avaliação de seguimento",
+    "aluno": {
+      "id": 1
+    }
+  },
+  {
+    "data": "2023-08-26",
+    "peso": 75.2,
+    "altura": 1.8,
+    "medidas": [85.0, 65.0, 94.0],
+    "porcentagemGordura": 16.0,
+    "observacoes": "Avaliação pós-treino",
+    "aluno": {
+      "id": 1
+    }
+  },
+  {
+    "data": "2023-08-27",
+    "peso": 72.8,
+    "altura": 1.68,
+    "medidas": [79.0, 61.5, 88.5],
+    "porcentagemGordura": 14.2,
+    "observacoes": "Avaliação semanal",
+    "aluno": {
+      "id": 2
+    }
+  },
+  {
+    "data": "2023-08-28",
+    "peso": 73.5,
+    "altura": 1.76,
+    "medidas": [81.5, 63.5, 92.5],
+    "porcentagemGordura": 15.8,
+    "observacoes": "Avaliação de início de programa",
+    "aluno": {
+      "id": 2
+    }
+  },
+  {
+    "data": "2023-08-29",
+    "peso": 69.7,
+    "altura": 1.72,
+    "medidas": [83.0, 64.5, 90.5],
+    "porcentagemGordura": 14.9,
+    "observacoes": "Avaliação mensal",
+    "aluno": {
+      "id": 2
+    }
+  },
+  {
+    "data": "2023-08-30",
+    "peso": 74.0,
+    "altura": 1.78,
+    "medidas": [84.5, 66.0, 93.0],
+    "porcentagemGordura": 15.5,
+    "observacoes": "Avaliação de desempenho",
+    "aluno": {
+      "id": 2
+    }
+  },
+  {
+    "data": "2023-08-31",
+    "peso": 70.0,
+    "altura": 1.74,
+    "medidas": [80.5, 62.5, 91.5],
+    "porcentagemGordura": 14.7,
+    "observacoes": "Avaliação de recuperação",
+    "aluno": {
+      "id": 3
+    }
+  },
+  {
+    "data": "2023-09-01",
+    "peso": 71.3,
+    "altura": 1.73,
+    "medidas": [82.5, 64.0, 92.5],
+    "porcentagemGordura": 15.2,
+    "observacoes": "Avaliação de final de temporada",
+    "aluno": {
+      "id": 3
+    }
+  },
+  {
+    "data": "2023-09-02",
+    "peso": 68.5,
+    "altura": 1.71,
+    "medidas": [81.0, 63.0, 90.0],
+    "porcentagemGordura": 14.6,
+    "observacoes": "Avaliação trimestral",
+    "aluno": {
+      "id": 3
+    }
+  }
+]

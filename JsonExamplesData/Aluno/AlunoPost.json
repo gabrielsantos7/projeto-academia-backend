@@ -1,0 +1,48 @@
+[
+   {
+     "nome": "João Silva",
+     "altura": 1.75,
+     "peso": 70.5,
+     "telefone": "(11) 98765-4321",
+     "dataNascimento": "2000-05-15",
+     "endereco": {
+       "logradouro": "Rua Principal",
+       "numero": "123",
+       "bairro": "Centro",
+       "cidade": "São Paulo",
+       "estado": "SP",
+       "cep": "01234-567"
+     }
+   },
+   {
+     "nome": "Maria Santos",
+     "altura": 1.68,
+     "peso": 62.0,
+     "telefone": "(21) 98765-1234",
+     "dataNascimento": "1998-09-20",
+     "endereco": {
+       "logradouro": "Avenida das Flores",
+       "numero": "456",
+       "bairro": "Jardim Botânico",
+       "cidade": "Rio de Janeiro",
+       "estado": "RJ",
+       "cep": "20000-123"
+     }
+   },
+   {
+     "nome": "Carlos Oliveira",
+     "altura": 1.80,
+     "peso": 80.2,
+     "telefone": "(31) 98765-9876",
+     "dataNascimento": "1995-03-10",
+     "endereco": {
+       "logradouro": "Rua das Montanhas",
+       "numero": "789",
+       "bairro": "Alto da Serra",
+       "cidade": "Belo Horizonte",
+       "estado": "MG",
+       "cep": "30000-456"
+     }
+   }
+ ]
+ 

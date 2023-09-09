@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "data": "2023-09-10",
+  "peso": 71.0,
+  "altura": 1.76,
+  "medidas": [82.0, 64.5, 93.5],
+  "porcentagemGordura": 15.3,
+  "observacoes": "Atualização dos dados da avaliação",
+  "aluno": {
+    "id": 1
+  }
+}
