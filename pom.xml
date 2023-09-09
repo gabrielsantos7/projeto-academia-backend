@@ -84,7 +84,6 @@
         </dependency>
     </dependencies>
 
-
     <build>
         <plugins>
             <plugin>
@@ -110,6 +109,9 @@
                             <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
+                    <compilerArgs>
+                        <arg>--add-modules=jdk.compiler</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
         </plugins>
