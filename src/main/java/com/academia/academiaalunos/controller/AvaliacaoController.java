@@ -5,6 +5,7 @@ import lombok.extern.log4j.Log4j2;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 
 import com.academia.academiaalunos.domain.Avaliacao;
@@ -20,6 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("avaliacoes") // http://localhost:8080/avaliacoes
 @Log4j2
+@CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 public class AvaliacaoController {
     private final DateUtil dateUtil;
