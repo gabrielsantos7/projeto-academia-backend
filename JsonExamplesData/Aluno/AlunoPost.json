@@ -43,6 +43,156 @@
        "estado": "MG",
        "cep": "30000-456"
      }
-   }
+   },
+   {
+    "nome": "João Silva",
+    "altura": 1.75,
+    "peso": 70.5,
+    "telefone": "(11) 98765-4321",
+    "dataNascimento": "2000-05-15",
+    "endereco": {
+      "logradouro": "Rua Principal",
+      "numero": "123",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01234-567"
+    }
+  },
+  {
+    "nome": "Maria Oliveira",
+    "altura": 1.68,
+    "peso": 60.2,
+    "telefone": "(11) 98765-5432",
+    "dataNascimento": "2001-02-10",
+    "endereco": {
+      "logradouro": "Avenida Secundária",
+      "numero": "456",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "09876-543"
+    }
+  },
+  {
+    "nome": "Pedro Santos",
+    "altura": 1.8,
+    "peso": 78,
+    "telefone": "(11) 98765-6543",
+    "dataNascimento": "1999-11-20",
+    "endereco": {
+      "logradouro": "Rua das Flores",
+      "numero": "789",
+      "bairro": "Jardins",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "04567-890"
+    }
+  },
+  {
+    "nome": "Ana Rodrigues",
+    "altura": 1.65,
+    "peso": 55.8,
+    "telefone": "(11) 98765-7654",
+    "dataNascimento": "2002-07-08",
+    "endereco": {
+      "logradouro": "Avenida Central",
+      "numero": "234",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "02345-678"
+    }
+  },
+  {
+    "nome": "Carlos Almeida",
+    "altura": 1.85,
+    "peso": 85.2,
+    "telefone": "(11) 98765-8765",
+    "dataNascimento": "1998-04-12",
+    "endereco": {
+      "logradouro": "Rua das Palmeiras",
+      "numero": "567",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "03456-789"
+    }
+  },
+  {
+    "nome": "Laura Ferreira",
+    "altura": 1.62,
+    "peso": 53,
+    "telefone": "(11) 98765-9876",
+    "dataNascimento": "2002-11-05",
+    "endereco": {
+      "logradouro": "Rua das Violetas",
+      "numero": "789",
+      "bairro": "Moema",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "04567-890"
+    }
+  },
+  {
+    "nome": "Gabriel Oliveira",
+    "altura": 1.78,
+    "peso": 74,
+    "telefone": "(11) 98765-8765",
+    "dataNascimento": "1999-07-18",
+    "endereco": {
+      "logradouro": "Avenida dos Ipês",
+      "numero": "456",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "02345-678"
+    }
+  },
+  {
+    "nome": "Juliana Lima",
+    "altura": 1.68,
+    "peso": 62.5,
+    "telefone": "(11) 98765-7654",
+    "dataNascimento": "2001-01-30",
+    "endereco": {
+      "logradouro": "Rua dos Pinheiros",
+      "numero": "789",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "03456-789"
+    }
+  },
+  {
+    "nome": "Ricardo Fernandes",
+    "altura": 1.82,
+    "peso": 80.3,
+    "telefone": "(11) 98765-4321",
+    "dataNascimento": "1999-09-25",
+    "endereco": {
+      "logradouro": "Rua das Acácias",
+      "numero": "567",
+      "bairro": "Moema",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "04567-890"
+    }
+  },
+  {
+    "nome": "Amanda Costa",
+    "altura": 1.7,
+    "peso": 63.8,
+    "telefone": "(11) 98765-6543",
+    "dataNascimento": "2001-12-10",
+    "endereco": {
+      "logradouro": "Avenida dos Jasmins",
+      "numero": "456",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "02345-678"
+    }
+  }
  ]
  
