@@ -27,7 +27,7 @@ public class Endereco {
     @Column(name = "id_endereco")
     private Long id;
     
-    private String logradouro;
+    private String rua;
 
     private String numero;
 

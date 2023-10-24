@@ -18,12 +18,6 @@ public class AlunoPostRequestBody {
     @NotBlank
     private String nome;
 
-    @NotNull
-    private double altura;
-
-    @NotNull
-    private double peso;
-
     @NotBlank
     @Pattern(regexp = "(\\(\\d{2}\\))?\\s?\\d{4,5}-\\d{4}", message = "Formato de telefone inválido")
     private String telefone;

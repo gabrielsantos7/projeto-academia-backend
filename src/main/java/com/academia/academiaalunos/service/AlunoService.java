@@ -37,8 +37,6 @@ public class AlunoService {
         return alunoRepository.save(
             Aluno.builder()
                 .nome(alunoPostRequestBody.getNome())
-                .altura(alunoPostRequestBody.getAltura())
-                .peso(alunoPostRequestBody.getPeso())
                 .telefone(alunoPostRequestBody.getTelefone())
                 .dataNascimento(alunoPostRequestBody.getDataNascimento())
                 .endereco(alunoPostRequestBody.getEndereco())
@@ -54,8 +52,6 @@ public class AlunoService {
         Aluno aluno = Aluno.builder()
             .id(savedAluno.getId())
             .nome(alunoPutRequestBody.getNome())
-            .altura(alunoPutRequestBody.getAltura())
-            .peso(alunoPutRequestBody.getPeso())
             .telefone(alunoPutRequestBody.getTelefone())
             .dataNascimento(alunoPutRequestBody.getDataNascimento())
             .endereco(alunoPutRequestBody.getEndereco())
